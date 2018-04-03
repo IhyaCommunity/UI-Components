@@ -1,0 +1,32 @@
+.hero {
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    background: url('../image/photo.jpg') no-repeat;
+    background-size: cover;
+    min-height: 50rem;
+    grid-gap: 2rem;
+
+    & > * {
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 3.8rem;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+
+    @media (min-width: 550px) {
+        h2 {
+            font-size: 4.2rem;
+        }
+    
+        h3 {
+            font-size: 2.1rem;
+        }
+    }
+}

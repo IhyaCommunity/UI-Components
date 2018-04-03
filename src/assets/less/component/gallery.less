@@ -1,0 +1,14 @@
+.gallery {
+    display: grid;
+    grid-gap: 4rem;
+
+    @media (min-width: 480px) {
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    }
+
+    header {
+        justify-self: center;
+        grid-column-start: 1;
+        grid-column-end: -1;
+    }
+}   
